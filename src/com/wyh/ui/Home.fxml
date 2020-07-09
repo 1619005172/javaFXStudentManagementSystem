@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            xmlns="http://javafx.com/javafx"
+            fx:controller="com.wyh.ui.ApplicationMain"
+            prefHeight="600" prefWidth="1014">
+    <TableView fx:id="table" prefHeight="600.0" prefWidth="1014" HBox.hgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="ID" prefWidth="75.0" text="ID"/>
+            <TableColumn fx:id="Name" prefWidth="153.0" text="姓名"/>
+            <TableColumn fx:id="Age" prefWidth="73.0" text="年龄"/>
+            <TableColumn fx:id="Address" prefWidth="300" text="住址"/>
+            <TableColumn fx:id="Num" prefWidth="155.0" text="学号"/>
+            <TableColumn fx:id="Cz" prefWidth="75.0" text="操作">
+<!--                <columns>-->
+<!--                    <TableColumn fx:id="Bj" prefWidth="35.0" text=""/>-->
+<!--                    <TableColumn fx:id="Sc" prefWidth="35.0" text=""/>-->
+<!--                </columns>-->
+            </TableColumn>
+            <TableColumn fx:id="Ad" prefWidth="75" text="">
+            </TableColumn>
+        </columns>
+    </TableView>
+    <Button fx:id="Bt" text="添加" prefWidth="75" prefHeight="47.5">
+        <AnchorPane.leftAnchor>862</AnchorPane.leftAnchor>
+        <AnchorPane.topAnchor>1</AnchorPane.topAnchor>
+    </Button>
+    <Button fx:id="Del" text="删除" prefWidth="75" prefHeight="47.5">
+        <AnchorPane.leftAnchor>937</AnchorPane.leftAnchor>
+        <AnchorPane.topAnchor>1</AnchorPane.topAnchor>
+    </Button>
+</AnchorPane>
